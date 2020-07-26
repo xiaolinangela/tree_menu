@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <title>Dynamic Tree Menu</title>
+  </head>
+  <body>
+    <ul id="myUL">
+      <li>
+        <span class="caret">Root</span>
+        <ul class="nested">
+          <li>
+            <span class="caret" id="levelA1">ParentA</span>
+            <ul class="nested">
+              <li>ChildA1</li>
+              <li>ChildA2</li>
+              <li>
+                <span class="caret" id="levelCA3">ChildA3</span>
+                <ul class="nested">
+                  <li>ChildA31</li>
+                  <li>ChildA32</li>
+                  <li>ChildA33</li>
+                </ul>
+              </li>
+            </ul>
+          </li>
+          <li>
+            <span class="caret" id="levelB1">ParentB</span>
+            <ul class="nested">
+              <li>ChildB1</li>
+              <li>ChildB2</li>
+              <li>
+                <span class="caret" id="levelCB3">ChildB3</span>
+                <ul class="nested">
+                  <li>ChildB31</li>
+                  <li>ChildB32</li>
+                  <li>ChildB33</li>
+                </ul>
+              </li>
+            </ul>
+          </li>
+        </ul>
+      </li>
+    </ul>
+    <script src="script.js"></script>
+  </body>
+</html>
