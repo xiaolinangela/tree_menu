@@ -8,16 +8,36 @@
   </head>
   <body>
     <ul id="myUL">
-      <li>
         <span class="caret">Root</span>
-        <ul class="nested">
+        <ul class="nested" id="root">
           <li>
             <span class="caret" id="levelA1">ParentA</span>
             <ul class="nested">
               <li>ChildA1</li>
-              <li>ChildA2</li>
               <li>
-                <span class="caret" id="levelCA3">ChildA3</span>
+                <span class="caret" >ChildA2</span>
+                <ul class="nested">
+                  <li>
+                    <span class="caret" >ChildA21</span>
+                    <ul class="nested">
+                      <li>ChildA211</li>
+                      <li>ChildA212</li>
+                      <li>ChildA213</li>
+                    </ul>
+                  </li>
+                  <li>
+                    <span class="caret" >ChildA22</span>
+                    <ul class="nested">
+                      <li>ChildA221</li>
+                      <li>ChildA222</li>
+                      <li>ChildA223</li>
+                    </ul>
+                  </li>
+                  <li>ChildA23</li>
+                </ul>
+              </li>
+              <li>
+                <span class="caret" >ChildA3</span>
                 <ul class="nested">
                   <li>ChildA31</li>
                   <li>ChildA32</li>
@@ -42,8 +62,11 @@
             </ul>
           </li>
         </ul>
-      </li>
+    
     </ul>
+</br>
+</br>
+    <button id="show-more" disabled>Show More</button>
     <script src="script.js"></script>
   </body>
 </html>
